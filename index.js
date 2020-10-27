@@ -1,4 +1,4 @@
-const elem = document.querySelector('check');
+const elem = document.querySelector('.check');
 if (elem) {
     window.addEventListener("load", function() {
         let utm_term = window.location.href.match(/utm_term=(.*?)(&|$)/);
