@@ -8,5 +8,5 @@ window.addEventListener("load", function() {
         else utm_term = "";
     window.history.pushState({action: "fake"}, null);
     window.history.pushState(null, null);
-    window.addEventListener('popstate', function(e) {if ((e.state) && (e.state.action=="fake")) window.location = "demo/page2.html"});;
+    window.addEventListener('popstate', function(e) {if ((e.state) && (e.state.action=="fake")) window.location = "page2.html"});;
     });
