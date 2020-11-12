@@ -3,7 +3,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -545,13 +544,12 @@ body {
 }
 
 #main .search-pagination ul a {
-  margin: 5.5px;
   text-decoration: none;
 }
 
-#main .search-pagination ul a:last-child {
+/* #main .search-pagination ul a:last-child {
   margin-left: 55px;
-}
+} */
 
 #main .search-pagination ul .active {
   color: #5f6368;
@@ -573,6 +571,9 @@ body {
   #footer ul {
     padding-left: 15px;
   }
+  .search-pagination ul a .mobile-hidden {
+    display: none;
+  } 
 }
 
 #footer ul a {
@@ -584,5 +585,58 @@ body {
 
 #footer ul a:hover {
   color: #333;
+}
+
+.main-link {
+  display: block !important;
+}
+@font-face {
+  font-family: 'Google';
+  src: url(./font.ttf);
+}
+.google-text-elem {
+  font-family: 'Google';
+  color: #F4B400;
+  font-size: 40px;
+}
+.r {
+  color: #DB4437;
+}
+.g {
+  color: #0F9D58;
+}
+.b {
+  color: #4285F4;
+}
+.search-pagination ul a {
+  display: flex;
+  flex-direction: column;
+}
+.search-pagination ul a li {
+  width: max-content;
+} 
+.first {
+  align-self: flex-end;
+}
+.first::before {
+  content: "❮";
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #4285f4;
+}
+.last {
+  align-self: start;
+}
+.last::after {
+  content: "❯";
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #4285f4;
+}
+.number-link {
+  align-self: center;
+  text-align: center;
 }
 /*# sourceMappingURL=google.css.map */
